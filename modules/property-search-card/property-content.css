@@ -1,0 +1,281 @@
+/*
+ * Property Hive search card stylesheet.
+ * Place in your theme alongside propertyhive/content-property.php
+ * (for example at propertyhive/property-content.css).
+ */
+
+:root {
+  --ph-card-font-sans: "Sora", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --ph-card-font-serif: "Playfair Display", "Georgia", serif;
+  --ph-card-ink: #2f2a23;
+  --ph-card-muted: #8d8375;
+  --ph-card-shell: #f2e7d7;
+  --ph-card-pill: rgba(47, 42, 35, 0.08);
+  --ph-card-shadow: 0 18px 38px rgba(47, 42, 35, 0.14);
+}
+
+.ph-card-item.ph-search-card-item,
+.ph-search-card-item {
+  list-style: none;
+  margin: 0 0 4.5rem;
+  padding: 0 2.5rem 4.5rem;
+  box-sizing: border-box;
+  font-family: var(--ph-card-font-sans);
+  color: var(--ph-card-ink);
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: none;
+}
+
+.ph-search-card {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.ph-search-card__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ph-search-card__media {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 437 / 256;
+  margin: 0;
+  background: var(--ph-card-shell);
+  overflow: hidden;
+}
+
+.ph-search-card__media-link {
+  display: block;
+  line-height: 0;
+}
+
+.ph-search-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.ph-search-card__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 0;
+  font-size: 1.1rem;
+  color: var(--ph-card-muted);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.ph-search-card__badge {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.4rem;
+  padding: 0.45rem 1.15rem;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--ph-card-ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(47, 42, 35, 0.08);
+  box-shadow: var(--ph-card-shadow);
+}
+
+.ph-search-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.ph-search-card__location {
+  margin: 0;
+  font-size: clamp(1rem, 2.6vw, 1.125rem);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-family: "Montserrat", var(--ph-card-font-sans);
+  color: var(--ph-card-muted);
+}
+
+.ph-search-card__title {
+  margin: 0;
+  font-family: var(--ph-card-font-serif);
+  font-size: 30px !important;
+  line-height: 1.18;
+  color: var(--ph-card-ink);
+}
+
+.ph-search-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ph-search-card__title a:hover,
+.ph-search-card__title a:focus {
+  text-decoration: underline;
+}
+
+.ph-search-card__stats {
+  margin: 0;
+  padding: 0;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-inline-start: 0 !important;
+  padding-inline-start: 0 !important;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 3rem;
+}
+
+.ph-search-card__stats > li {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.ph-search-card__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 2.6vw, 1.125rem);
+  font-family: "Montserrat", var(--ph-card-font-sans);
+  color: var(--ph-card-ink);
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: none;
+  padding: 0;
+}
+
+.ph-search-card__stat--price,
+.ph-search-card__stat--price-poa,
+.ph-search-card__stat--bedrooms,
+.ph-search-card__stat--energy,
+.ph-search-card__stat.energie_label {
+  padding: 0 !important;
+}
+
+.ph-search-card__stat--price {
+  font-family: var(--ph-card-font-serif);
+  font-size: clamp(1.3rem, 3.6vw, 1.5625rem);
+  gap: 1.1rem;
+  color: var(--ph-card-ink) !important;
+}
+
+.ph-search-card__stat--price-poa .ph-search-card__price-value {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 500;
+  color: var(--ph-card-muted);
+}
+
+.ph-search-card__price-value {
+  font-size: clamp(1.3rem, 3.6vw, 1.5625rem);
+  line-height: 1;
+  font-weight: 600;
+  color: var(--ph-card-ink) !important;
+}
+
+.ph-search-card__price-tag {
+  font-family: var(--ph-card-font-sans);
+  font-size: clamp(0.95rem, 2.2vw, 1.125rem);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--ph-card-muted);
+}
+
+.ph-search-card__stat-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background: currentColor;
+  opacity: 0.78;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.ph-search-card__stat-text {
+  line-height: 1.15;
+}
+
+.ph-search-card__stat--area .ph-search-card__stat-icon {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='3.5' width='17' height='17' rx='2'/%3E%3Cpath d='M3.5 9.5h3M3.5 14.5h3M17.5 20.5v-3M12.5 20.5v-3M20.5 14.5h-3M20.5 9.5h-3M6.5 3.5v3M11.5 3.5v3'/%3E%3C/svg%3E");
+}
+
+.ph-search-card__stat--bedrooms .ph-search-card__stat-icon {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12h20a2 2 0 0 1 2 2v6H0v-6a2 2 0 0 1 2-2Z'/%3E%3Cpath d='M4 12V9a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3'/%3E%3Cpath d='M2 20v2'/%3E%3Cpath d='M22 20v2'/%3E%3C/svg%3E");
+}
+
+
+.ph-search-card__stat--energy .ph-search-card__stat-icon {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 2 5 14h6l-1 8 8-12h-6l1-8Z'/%3E%3C/svg%3E");
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 599px) {
+  .ph-search-card__inner {
+    gap: 1.5rem;
+  }
+
+  .ph-search-card__media,
+  .ph-search-card__details {
+    max-width: 100%;
+  }
+
+  .ph-search-card__media {
+    aspect-ratio: 437 / 256;
+  }
+
+  .ph-search-card__placeholder {
+    min-height: 0;
+  }
+
+  .ph-search-card__title {
+    font-size: 22px !important;
+  }
+
+  .ph-search-card__stats {
+    gap: 0.75rem 1.4rem;
+  }
+
+  .ph-search-card__stat {
+    font-size: 1.05rem;
+  }
+
+  .ph-search-card__stat--price,
+  .ph-search-card__price-value {
+    font-size: 1.45rem;
+  }
+}

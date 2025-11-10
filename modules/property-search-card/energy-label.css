@@ -1,0 +1,184 @@
+/*
+ * Property Hive energy label palette.
+ * Place in your theme alongside propertyhive/content-property.php
+ * (for example at propertyhive/energy-label.css).
+ */
+
+.wrap_energie_label,
+.energie_label {
+  display: inline-flex;
+  align-items: center;
+  font-size: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  gap: 0.25rem;
+}
+
+.energie_label {
+  --energie-badge-bg: #00923f;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--energie-badge-bg);
+  color: var(--energie-value-color);
+  line-height: 1.1;
+  font-family: "Montserrat", "Sora", "Helvetica Neue", Arial, sans-serif;
+}
+
+.energie_label::after {
+  display: none;
+}
+
+.energie_label .energie_label_label {
+  color: var(--energie-label-color);
+}
+
+.energie_label .energie_label_value {
+  color: var(--energie-value-color);
+}
+
+/* Energy label variants */
+.wrap_energie_label .rem-single-field-value[data-value="A+++"] {
+  background: #00923f;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="A+++"]::after {
+  border-left-color: #00923f;
+}
+
+.energie_label[data-value="A+++"] {
+  --energie-badge-bg: #00923f;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="A++"] {
+  background: #00923f;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="A++"]::after {
+  border-left-color: #00923f;
+}
+
+.energie_label[data-value="A++"] {
+  --energie-badge-bg: #00923f;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="A+"] {
+  background: #00923f;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="A+"]::after {
+  border-left-color: #00923f;
+}
+
+.energie_label[data-value="A+"] {
+  --energie-badge-bg: #00923f;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="A"] {
+  background: #00923f;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="A"]::after {
+  border-left-color: #00923f;
+}
+
+.energie_label[data-value="A"] {
+  --energie-badge-bg: #00923f;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="B"] {
+  background: #36b34a;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="B"]::after {
+  border-left-color: #36b34a;
+}
+
+.energie_label[data-value="B"] {
+  --energie-badge-bg: #36b34a;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="C"] {
+  background: #84c225;
+  color: #2f2a23;
+}
+.wrap_energie_label .rem-single-field-value[data-value="C"]::after {
+  border-left-color: #84c225;
+}
+
+.energie_label[data-value="C"] {
+  --energie-badge-bg: #84c225;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="D"] {
+  background: #fbe122;
+  color: #000;
+}
+.wrap_energie_label .rem-single-field-value[data-value="D"]::after {
+  border-left-color: #fbe122;
+}
+
+.energie_label[data-value="D"] {
+  --energie-badge-bg: #fbe122;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="E"] {
+  background: #f6a500;
+  color: #2f2a23;
+}
+.wrap_energie_label .rem-single-field-value[data-value="E"]::after {
+  border-left-color: #f6a500;
+}
+
+.energie_label[data-value="E"] {
+  --energie-badge-bg: #f6a500;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="F"] {
+  background: #eb5c2b;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="F"]::after {
+  border-left-color: #eb5c2b;
+}
+
+.energie_label[data-value="F"] {
+  --energie-badge-bg: #eb5c2b;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
+
+.wrap_energie_label .rem-single-field-value[data-value="G"] {
+  background: #e51c20;
+  color: #fff;
+}
+.wrap_energie_label .rem-single-field-value[data-value="G"]::after {
+  border-left-color: #e51c20;
+}
+
+.energie_label[data-value="G"] {
+  --energie-badge-bg: #e51c20;
+  --energie-value-color: #2f2a23;
+  --energie-label-color: #2f2a23;
+}
